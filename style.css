@@ -1,6 +1,10 @@
 *{
     margin: 0;
 }
+#header{
+    display: flex;
+    justify-content: center;
+}
 img#charusat{
     height: 50px;
     
