@@ -1,10 +1,116 @@
-*{
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Math&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-#header{
+
+body, html {
+  height: 100%;
+  font-family: 'Arial Black', sans-serif;
+}
+
+.topbar {
+  background-color: white;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.topbar img {
+  height: 60px;
+}
+
+.hero {
+  background: url("about.jpg") center center/cover no-repeat;
+  height: calc(100vh - 80px); /* full height minus logo bar */
+  position: relative;
+}
+
+nav{
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    background-color: rgb(2, 36, 84);
+    position: sticky;
+    top: 0;
+}
+ul{
     display: flex;
-    justify-content: center;
+    list-style: none;
+    gap: 40px;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
-img#charusat{
-    height: 50px;
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+.overlay {
+  background-color: rgba(2, 13, 29, 0.811); /* Dark blue */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  
+}
+
+.overlay h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: white;
+  margin: 0.5rem 0;
+  line-height: 1.2;
+  text-shadow: 5px 5px black;
+  font-family: "Raleway", sans-serif;
+}
+
+.overlay h1 span {
+  color: #f9dc3c; /* Bright Yellow */
+}
+
+.overlay button{
+    padding: 8px;
+    border-radius: 40px;
+    letter-spacing: 3px;
+    position: relative;
+    top: 15px;
+    color: white;
+    background-color: rgb(2, 36, 84);
+}
+.container {
+  display: flex;
+  gap: 50px; /* Optional spacing */
+  position: relative;
+  top: 25px;
+}
+
+.box {
+  width:300px;
+  height: 400px;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+.box img{
+    margin: 2px;
+    border-radius: 10px;
+    width: 296px;
+}
+.box p{
+    font-family: "Raleway", sans-serif;
+    padding: 15px;
+}
+.box h4{
+    font-family: "Libertinus Math", system-ui;
+    font-size: 25px;
+    font-weight: 500px;
+    padding-top: 10px;
 }
