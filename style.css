@@ -51,6 +51,11 @@ ul li a{
     text-decoration: none;
     color: white;
 }
+ul :hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+  color: #f9dc3c;
+}
 .overlay {
   background-color: rgba(2, 13, 29, 0.811); /* Dark blue */
   width: 100%;
@@ -75,6 +80,15 @@ ul li a{
 
 .overlay h1 span {
   color: #f9dc3c; /* Bright Yellow */
+}
+.overlay h1#first{
+  position: relative;
+  right: 40px;
+  top: 25px;
+}
+.overlay h1#second{
+  position: relative;
+  left: 40px;
 }
 
 .overlay button{
@@ -113,4 +127,25 @@ ul li a{
     font-size: 25px;
     font-weight: 500px;
     padding-top: 10px;
+}
+.log{
+    width: 180px;
+    height: 25px;
+    background-color: rgb(6, 47, 111);
+    border-radius: 30px;
+}
+.log:hover{
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+.log a{
+  color: white;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
+}
+.box:hover{
+  transform: scale(1.05);
+  transition: 0.5s;
+  color: rgb(16, 55, 184);
 }
